@@ -1,73 +1,57 @@
-# 📊 Guia Completo da Área de Dados
+# 📚 Biblioteca de Estudos em Dados
 
-Bem-vindo(a) ao repositório **Guia Completo da Área de Dados**!  
-Este projeto foi criado para servir como um **mapa de estudos prático e organizado**, cobrindo desde conceitos básicos até tópicos avançados em **Análise de Dados**, **Ciência de Dados** e **Engenharia de Dados**.
+Este repositório reúne exemplos didáticos para quem deseja aprender ou revisar fundamentos de **Excel**, **Power BI**, **SQL** e **Python**. Cada tecnologia está organizada em três níveis de complexidade (Básico, Intermediário e Avançado) com 10 exemplos práticos por nível.
 
-O objetivo é fornecer conteúdos claros, exemplos práticos e referências úteis para quem deseja trabalhar ou evoluir na área de dados.
+## 🗂️ Estrutura
 
----
+```
+Excel/
+  Basico/
+  Intermediario/
+  Avancado/
+Power_BI/
+  Basico/
+  Intermediario/
+  Avancado/
+SQL/
+  Basico/
+  Intermediario/
+  Avancado/
+Python/
+  Basico/
+  Intermediario/
+  Avancado/
+```
 
-## 📂 Estrutura do Repositório
+Cada arquivo `.md` contém:
 
-### 1. **Analise_de_dados&BI**
-> Foco na extração de insights, construção de métricas e uso de ferramentas para Business Intelligence.
-- **Modelagem_de_bancodedados** → Conceitos e práticas de modelagem relacional e dimensional.
-- **Python_para_analise** → Scripts para análise de dados, visualizações e relatórios.
-- **SQL** → Consultas e técnicas para análise e exploração de dados.
-- **Tipos_de_analises_e_metricas** → Tipos de análises (descritiva, diagnóstica, preditiva, prescritiva) e definição de KPIs.
-- `readme_analise.md` → Introdução e orientações para esta secção.
+- **Título objetivo**
+- **Descrição do conceito**
+- **Código completo ou fórmula** (quando aplicável)
+- **Explicação passo a passo**
+- **Resultado esperado**
 
----
+Os exemplos evoluem de conceitos introdutórios para situações avançadas, sempre com linguagem simples e foco no dia a dia profissional.
 
-### 2. **Ciencia_de_dados**
-> Aborda a parte preditiva e estatística do trabalho com dados.
-- **Machine_Learning** → Algoritmos supervisionados e não supervisionados, avaliação e tuning de modelos.
-- **Python_para_ciencia** → Bibliotecas e técnicas para manipulação e análise científica de dados.
-- **Series_Temporais** → Modelagem e previsão de dados temporais (ARIMA, Prophet, LSTM, etc.).
-- `readme_ciencia.md` → Explicações e guia de estudo.
+## ✅ Como aproveitar os conteúdos
 
----
+1. Escolha a tecnologia e o nível que deseja estudar.
+2. Leia os exemplos na ordem sugerida para construir conhecimento gradualmente.
+3. Reproduza os códigos ou fórmulas no seu ambiente para fixar os conceitos.
+4. Consulte os testes automatizados (`pytest`) para garantir que a estrutura permanece íntegra.
 
-### 3. **Engenharia_de_dados**
-> Estruturação, integração e processamento de dados em larga escala.
-- **API** → Consumo e criação de APIs para ingestão de dados.
-- **Azure** → Ferramentas e serviços cloud para engenharia de dados.
-- **CI-CD** → Integração e entrega contínua para pipelines de dados.
-- **Kafka** → Mensageria e processamento de dados em tempo real.
-- **Python_para_engenharia** → Automação e processamento com Python.
-- **SQL_para_engenharia** → SQL voltado para ETL e transformação.
-- **airflow** → Orquestração de workflows de dados.
-- **dbt-databuildtool** → Transformações com SQL de forma escalável e versionada.
-- **docker** → Criação de ambientes reprodutíveis para engenharia.
-- **spark** → Processamento distribuído de grandes volumes de dados.
-- `readme_engenharia.md` → Introdução e exemplos práticos.
+## 🧪 Testes
 
----
+O repositório inclui testes automatizados que verificam a existência das pastas, a quantidade de exemplos e a presença das seções obrigatórias em cada arquivo. Execute:
 
-## 🎯 Objetivos do Projeto
-- Criar um **guia estruturado** para estudantes e profissionais da área de dados.
-- Reunir exemplos práticos e teóricos num só lugar.
-- Facilitar a aprendizagem por **caminhos de estudo claros**.
-
----
-
-## 🚀 Como Utilizar
-1. Navegue pelas pastas conforme a sua área de interesse.
-2. Leia os `readme.md` de cada secção para entender o conteúdo.
-3. Execute os exemplos práticos no seu ambiente de desenvolvimento.
-4. Contribua com melhorias ou novos exemplos via **pull request**.
-
----
+```bash
+pytest
+```
 
 ## 🤝 Contribuições
-Este é um projeto colaborativo!  
-Sinta-se à vontade para:
-- Sugerir melhorias
-- Adicionar novos exemplos
-- Corrigir erros ou atualizar conteúdos
 
----
+Sugestões de melhoria, correções e novos exemplos são muito bem-vindos. Abra uma issue ou envie um pull request seguindo o padrão estabelecido.
 
-## 📜 Licença
-Este projeto está licenciado.
-Consulte o ficheiro `LICENSE` para mais detalhes.
+## 📄 Licença
+
+Distribuído sob a licença presente no arquivo `LICENSE`.
