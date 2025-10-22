@@ -55,7 +55,8 @@ O objetivo é fornecer conteúdos claros, exemplos práticos e referências úte
 1. Navegue pelas pastas conforme a sua área de interesse.
 2. Leia os `readme.md` de cada secção para entender o conteúdo.
 3. Execute os exemplos práticos no seu ambiente de desenvolvimento.
-4. Contribua com melhorias ou novos exemplos via **pull request**.
+4. Valide os exemplos executando `pytest` na raiz do repositório — todos os módulos possuem testes automatizados que comprovam o funcionamento das rotinas e queries.
+5. Contribua com melhorias ou novos exemplos via **pull request**.
 
 ---
 

@@ -1,55 +1,42 @@
 # 🏗️ Engenharia de Dados
 
-Esta secção aborda as práticas e ferramentas para **construir pipelines, integrar sistemas e processar grandes volumes de dados**.
+Scripts e modelos desta pasta demonstram como integrar sistemas, padronizar pipelines e validar transformações em diferentes ferramentas do ecossistema de dados.
 
 ---
 
-## 📂 Estrutura e Conteúdos
+## 📂 Conteúdos Disponíveis
 
 ### 1. **API**
-- **O que é:** Interfaces para integração e troca de dados entre sistemas.
-- **Como usar:** Veja exemplos de consumo (GET, POST) e criação de APIs para ingestão de dados.
+- `api_client.py` implementa um cliente para leitura de respostas JSON com validação de schema para leituras meteorológicas.
 
 ### 2. **Azure**
-- **O que é:** Serviços cloud da Microsoft para armazenamento, processamento e análise.
-- **Como usar:** Explore exemplos de uso do **Data Factory**, **Synapse**, **Databricks** e outros serviços.
+- `data_lake.py` fornece a classe `DataLakePath` que padroniza URIs particionadas no Azure Data Lake.
 
 ### 3. **CI-CD**
-- **O que é:** Integração e entrega contínua de código e pipelines.
-- **Como usar:** Veja como automatizar deploys e testes de pipelines de dados.
+- `pipeline.py` simula a resolução de dependências entre estágios de um pipeline de dados.
 
 ### 4. **Kafka**
-- **O que é:** Plataforma de streaming para dados em tempo real.
-- **Como usar:** Estude exemplos de criação de produtores e consumidores para processamento em fluxo.
+- `in_memory_kafka.py` representa tópicos Kafka em memória com operações de `produce`/`consume` para prototipagem.
 
 ### 5. **Python_para_engenharia**
-- **O que é:** Scripts para ETL, automação e integração.
-- **Como usar:** Utilize para criar rotinas de ingestão e transformação de dados.
+- `etl_utils.py` inclui funções de deduplicação e enriquecimento de registos para pipelines ETL.
 
 ### 6. **SQL_para_engenharia**
-- **O que é:** SQL otimizado para cargas, transformações e preparação de dados.
-- **Como usar:** Aplique em tarefas de staging e modelagem em Data Warehouses.
+- `warehouse_transformations.sql` cria estruturas de staging e uma view de features para churn.
 
 ### 7. **airflow**
-- **O que é:** Orquestrador de workflows para pipelines.
-- **Como usar:** Execute DAGs de ETL e agende processos de dados.
+- `dag_example.py` descreve uma estrutura simples de DAG com verificação de dependências cíclicas.
 
 ### 8. **dbt-databuildtool**
-- **O que é:** Ferramenta para transformar dados usando SQL versionado.
-- **Como usar:** Crie modelos de dados versionados e documentados.
+- `models/dim_customers.sql` demonstra um modelo dbt com `ref` e limpeza de dados.
 
 ### 9. **docker**
-- **O que é:** Plataforma para criar ambientes isolados e portáteis.
-- **Como usar:** Execute pipelines e ferramentas em containers reprodutíveis.
+- `data_pipeline_container.md` documenta um `Dockerfile` minimalista para executar pipelines Python.
 
 ### 10. **spark**
-- **O que é:** Framework para processamento distribuído de grandes volumes de dados.
-- **Como usar:** Rode exemplos de transformação e análise com PySpark.
+- `spark_like.py` fornece uma API inspirada em DataFrames do Spark para filtragem e seleção em memória.
 
 ---
 
-## 🚀 Objetivo
-Ensinar como **estruturar, processar e disponibilizar dados** para análises e modelos de Machine Learning de forma escalável.
-
----
-
+## ✅ Como validar
+Os testes com `pytest` verificam o comportamento de cada componente: clientes de API, resolução de DAGs, simulação de Kafka, SQL de warehouse e documentação de Docker.

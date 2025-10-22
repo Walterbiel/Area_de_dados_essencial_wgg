@@ -1,31 +1,25 @@
 # 📊 Análise de Dados & Business Intelligence
 
-Esta secção aborda as técnicas, ferramentas e metodologias para **explorar, analisar e transformar dados em insights úteis** para o negócio.
+Esta secção apresenta exemplos práticos que demonstram como estruturar dados e calcular métricas essenciais para apoiar decisões de negócio.
 
 ---
 
-## 📂 Estrutura e Conteúdos
+## 📂 Conteúdos Disponíveis
 
 ### 1. **Modelagem_de_bancodedados**
-- **O que é:** Estruturação lógica de bases de dados para otimizar armazenamento e consultas.
-- **Como usar:** Aqui encontrará exemplos de **modelos relacionais** (3FN) e **modelos dimensionais** (Star Schema, Snowflake) usados em Data Warehousing.
+- `sales_star_schema.sql` define um **Star Schema** completo para uma fact table de vendas e dimensões de data, cliente e produto.
+- Inclui `vw_revenue_by_category`, uma view de agregação já otimizada para dashboards.
 
 ### 2. **Python_para_analise**
-- **O que é:** Scripts e notebooks com bibliotecas como **Pandas**, **Matplotlib** e **Seaborn** para manipulação e visualização de dados.
-- **Como usar:** Execute os notebooks para aprender técnicas de limpeza, transformação e análise exploratória.
+- `kpi_analysis.py` oferece funções para cálculo de **receita por segmento**, **ticket médio** e **taxa de crescimento** usando `SaleRecord` como estrutura de dados tipada.
 
 ### 3. **SQL**
-- **O que é:** Linguagem padrão para consulta de bases de dados.
-- **Como usar:** Estude exemplos de queries, agregações, joins e subconsultas para análise de dados diretamente no banco.
+- `retail_queries.sql` contém consultas testadas para receita por categoria e ticket médio por segmento, prontas para uso em ferramentas de BI.
 
 ### 4. **Tipos_de_analises_e_metricas**
-- **O que é:** Aborda os diferentes tipos de análise — descritiva, diagnóstica, preditiva e prescritiva — e como definir métricas e KPIs.
-- **Como usar:** Use estes conceitos para orientar as decisões e estruturar dashboards eficientes.
+- `analytics_playbook.py` organiza definições dos tipos de análise (descritiva, diagnóstica, preditiva e prescritiva) e fornece utilitários para filtrar métricas e gerar descrições amigáveis para dashboards.
 
 ---
 
-## 🚀 Objetivo
-Fornecer uma base sólida para **analisar dados e criar relatórios** que apoiem decisões estratégicas.
-
----
-
+## ✅ Como validar
+Todos os scripts possuem testes automatizados com `pytest`, garantindo que o schema SQL é criado corretamente e que os cálculos de KPI devolvem os valores esperados.
