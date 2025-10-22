@@ -1,27 +1,21 @@
 # 🧠 Ciência de Dados
 
-Esta secção cobre conceitos, técnicas e ferramentas usadas para **descobrir padrões, criar modelos preditivos e extrair valor dos dados**.
+Esta secção reúne implementações enxutas para treinar, avaliar e preparar modelos de Machine Learning com Python puro.
 
 ---
 
-## 📂 Estrutura e Conteúdos
+## 📂 Conteúdos Disponíveis
 
 ### 1. **Machine_Learning**
-- **O que é:** Implementação de algoritmos supervisionados (regressão, classificação) e não supervisionados (clustering, PCA).
-- **Como usar:** Explore exemplos práticos, ajuste hiperparâmetros e teste modelos com conjuntos de treino e teste.
+- `linear_model.py` implementa uma regressão linear multivariada via gradiente descendente, com interface `fit`/`predict` semelhante a bibliotecas populares.
 
 ### 2. **Python_para_ciencia**
-- **O que é:** Uso de bibliotecas como **NumPy**, **Scikit-learn**, **Statsmodels** para manipulação, análise estatística e modelagem.
-- **Como usar:** Execute os notebooks e scripts para aprender a tratar datasets e aplicar modelos estatísticos.
+- `feature_engineering.py` agrupa utilitários de preparação de dados como normalização min-max, divisão treino/teste e codificação de categorias.
 
 ### 3. **Series_Temporais**
-- **O que é:** Modelagem de dados que variam no tempo, como vendas, cotações ou sensores.
-- **Como usar:** Utilize exemplos com **ARIMA**, **Prophet** e redes neurais para prever valores futuros.
+- `time_series_models.py` inclui funções para previsão com média móvel e cálculo de índices sazonais.
 
 ---
 
-## 🚀 Objetivo
-Capacitar o estudante a **construir e avaliar modelos de Machine Learning e previsão** de forma prática e orientada a dados reais.
-
----
-
+## ✅ Como validar
+Utilize `pytest` para executar os testes automatizados: eles verificam convergência do modelo de regressão, consistência das transformações de features e cálculos de séries temporais.
